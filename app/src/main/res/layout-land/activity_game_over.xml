@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#00BBFF" >
+
+    <TextView
+        android:id="@+id/time_completed_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/result_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/result_txt"
+        android:layout_alignTop="@+id/result_txt"
+        android:layout_toRightOf="@+id/result_txt"
+        android:background="#f2de15"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/retry_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@+id/game_over_txt"
+        android:background="#f2de15"
+        android:text="@string/retry_btn" />
+
+    <Button
+        android:id="@+id/home_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/retry_btn"
+        android:layout_alignBottom="@+id/retry_btn"
+        android:layout_toRightOf="@+id/game_over_txt"
+        android:background="#f2de15"
+        android:text="@string/home_btn" />
+
+    <TextView
+        android:id="@+id/time_penalty_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/penalty_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/penalty_txt"
+        android:layout_toRightOf="@+id/penalty_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#f2de15" />
+
+    <TextView
+        android:id="@+id/final_score_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/f_score_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/f_score_txt"
+        android:layout_toRightOf="@+id/f_score_txt"
+        android:background="#f2de15"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/game_over_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ff3a83"
+        android:text="@string/game_over_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/result_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/game_over_txt"
+        android:layout_marginTop="14dp"
+        android:text="@string/score_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/wrong_q_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time_completed_txt"
+        android:text="@string/wrong_ans_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/incorrect_ans_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/penalty_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/wrong_q_txt"
+        android:layout_toRightOf="@+id/retry_btn"
+        android:background="#f2de15"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/penalty_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wrong_q_txt"
+        android:text="@string/penalty_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/f_score_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time_penalty_txt"
+        android:layout_marginTop="19dp"
+        android:text="@string/final_score_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

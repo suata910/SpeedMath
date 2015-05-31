@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nz.ac.otago.telecom.speedmath.MainActivity"
+    android:background="#00BBFF" >
+
+    <TextView
+        android:id="@+id/speedmath_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/speed_math"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/speedmath_txt"
+        android:layout_alignRight="@id/speedmath_txt"
+        android:layout_below="@+id/speedmath_txt"
+        android:layout_marginTop="50dp"
+        android:text="@string/play_btn" 
+        android:onClick="openGameScreen"
+        android:background="#f2de15"/>
+
+    <Button
+        android:id="@+id/highscores_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/play_btn"
+        android:layout_alignRight="@+id/play_btn"
+        android:layout_below="@+id/play_btn"
+        android:layout_marginTop="25dp"
+        android:text="@string/highscores_btn" 
+        android:background="#f2de15"/>
+
+    <Button
+        android:id="@+id/help_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/highscores_btn"
+        android:layout_alignRight="@+id/highscores_btn"
+        android:layout_below="@+id/highscores_btn"
+        android:layout_marginTop="25dp"
+        android:text="@string/help_btn" 
+        android:background="#f2de15"/>
+
+    <Button
+        android:id="@+id/about_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/help_btn"
+        android:layout_alignRight="@+id/help_btn"
+        android:layout_below="@+id/help_btn"
+        android:layout_marginTop="25dp"
+        android:text="@string/about_btn" 
+        android:background="#f2de15"/>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nz.ac.otago.telecom.speedmath.GameScreen" 
+    >
+
+    <Button
+        android:id="@+id/true_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="86dp"
+        android:text="@string/true_btn" />
+
+    <Button
+        android:id="@+id/false_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/true_btn"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/true_btn"
+        android:text="@string/false_btn" />
+
+    <TextView
+        android:id="@+id/math_statement_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/true_btn"
+        android:layout_alignLeft="@+id/false_btn"
+        android:layout_alignRight="@+id/true_btn"
+        android:layout_marginBottom="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/feedback_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/math_statement_txt"
+        android:layout_alignLeft="@+id/math_statement_txt"
+        android:layout_alignRight="@+id/math_statement_txt"
+        android:layout_marginBottom="72dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/q_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/questions_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/questions_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/q_txt"
+        android:layout_alignBottom="@+id/q_txt"
+        android:layout_toRightOf="@+id/q_txt"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Chronometer
+        android:id="@+id/timer_chr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questions_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:text="Chronometer" />
+
+    "
+
+</RelativeLayout>

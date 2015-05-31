@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nz.ac.otago.telecom.speedmath.Help"
+    android:background="#00BBFF" >
+    
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/help_txt"
+            android:layout_below="@+id/help_txt" />
+
+        <TextView
+            android:id="@+id/help_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/open_browser_btn"
+            android:text="@string/help_txt"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/home_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/webView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/open_browser_btn"
+            android:background="#f2de15"
+            android:onClick="openHome"
+            android:text="@string/home_btn" />
+
+        <Button
+            android:id="@+id/open_browser_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#f2de15"
+            android:text="@string/open_browser_btn" />
+
+</RelativeLayout>
